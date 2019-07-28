@@ -30,6 +30,10 @@ const config = {
     module: {
         rules: [
             {
+                test: /\.js/,
+                loader: 'babel-loader'
+            },
+            {
                 test: /\.(sass|scss)$/,
                 use: [
                     {
