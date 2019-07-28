@@ -39,8 +39,7 @@ const config = {
                     {
                         loader: "css-loader",
                         options: {
-                            sourceMap: true,
-                            url: false
+                            sourceMap: true
                         }
                     },
                     {
@@ -77,7 +76,7 @@ const config = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: '../css/[hash].[ext]'
+                            name: '../fonts/[name]/[hash].[ext]'
                         }
                     }
                 ]
@@ -87,13 +86,7 @@ const config = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: path.join('..', 'css', 'theme.css')
-        }),
-        new CopyWebpackPlugin([
-            {
-                from: "./fonts",
-                to: path.join('..', 'fonts')
-            }
-        ])
+        })
     ]
 };
 
