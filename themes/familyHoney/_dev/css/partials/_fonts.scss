@@ -1,0 +1,32 @@
+
+@include font-face('pattaya', '#{$font-path}pattaya-regular/pattaya-regular');
+@include font-face('montserrat', '#{$font-path}montserrat-regular/montserrat-regular');
+@include font-face('montserrat', '#{$font-path}montserrat-bold/montserrat-bold', 700);
+@include font-face('montserrat', '#{$font-path}montserrat-extrabold/montserrat-extrabold', 800);
+@include font-face('oswald', '#{$font-path}oswald-bold/oswald-bold', 700);
+
+@font-face {
+ font-family: "Ionicons";
+ src:url(~ionicons/dist/fonts/ionicons.eot);
+ src:url(~ionicons/dist/fonts/ionicons.eot) format("embedded-opentype"),
+  url(~ionicons/dist/fonts/ionicons.woff2) format("woff2"),
+  url(~ionicons/dist/fonts/ionicons.woff) format("woff"),
+  url(~ionicons/dist/fonts/ionicons.ttf) format("truetype"),
+  url(~ionicons/dist/fonts/ionicons.svg) format("svg");
+ font-weight: normal;
+ font-style: normal;
+}
+
+.ion {
+  display: inline-block;
+  font-family: "Ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
