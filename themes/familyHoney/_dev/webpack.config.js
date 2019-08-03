@@ -13,6 +13,7 @@ const config = {
         path: path.resolve(__dirname, '../assets/js'),
         filename: 'theme.js'
     },
+    devtool: 'source-map',
     externals: {
         prestashop: 'prestashop',
         $: '$',
