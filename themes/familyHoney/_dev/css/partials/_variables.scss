@@ -1,6 +1,14 @@
+$font-stack: -apple-system, montserrat, Roboto,'Open Sans','Helvetica Neue',sans-serif;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px
+);
 $brand-info: #000;
-$gray-dark: #363A42;
-$gray-darker: #232323;
+$green-dark: #95be03;
+$gray-dark: #1e1e1e;
+$gray-darker: #1d1d1d;
 $gray: #7A7A7A;
 $gray-light: #F1F1F1;
 $gray-light-second: #DBDBDB;
