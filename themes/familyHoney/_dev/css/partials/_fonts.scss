@@ -1,6 +1,7 @@
 
 @include font-face('pattaya', '#{$font-path}pattaya-regular/pattaya-regular');
 @include font-face('montserrat', '#{$font-path}montserrat-regular/montserrat-regular');
+@include font-face('montserrat', '#{$font-path}montserrat-light/montserrat-light', 300);
 @include font-face('montserrat', '#{$font-path}montserrat-bold/montserrat-bold', 700);
 @include font-face('montserrat', '#{$font-path}montserrat-extrabold/montserrat-extrabold', 800);
 @include font-face('oswald', '#{$font-path}oswald-bold/oswald-bold', 700);
