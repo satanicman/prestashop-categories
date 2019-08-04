@@ -22,23 +22,29 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-{block name='header_banner'}
-    <div class="header-banner">
-        {hook h='displayBanner'}
-    </div>
-{/block}
 
 {block name='header_nav'}
     <nav class="header-nav">
         <div class="container">
             <div class="row">
-                <div class="hidden-sm-down">
-                    <div class="col-md-5 col-xs-12">
-                        {hook h='displayNav1'}
-                    </div>
-                    <div class="col-md-7 right-nav">
-                        {hook h='displayNav2'}
-                    </div>
+                <div class="col-lg-2 col-md-3 col-xs-12" id="_desktop_logo">
+                    {if $page.page_name == 'index'}
+                        <h1>
+                            <a href="{$urls.base_url}">
+                                <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
+                            </a>
+                        </h1>
+                    {else}
+                        <a href="{$urls.base_url}">
+                            <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
+                        </a>
+                    {/if}
+                </div>
+                <div class="col-lg-8 col-md-6 col-xs-9 clearfix center-nav">
+                    {hook h='displayNav1'}
+                </div>
+                <div class="col-lg-2 col-md-3 col-xs-3 right-nav">
+                    {hook h='displayNav2'}
                 </div>
                 <div class="hidden-md-up text-sm-center mobile">
                     <div class="float-xs-left" id="menu-icon">
@@ -57,24 +63,8 @@
 {block name='header_top'}
     <div class="header-top">
         <div class="container">
-            <div class="row">
-                <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
-                    {if $page.page_name == 'index'}
-                        <h1>
-                            <a href="{$urls.base_url}">
-                                <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
-                            </a>
-                        </h1>
-                    {else}
-                        <a href="{$urls.base_url}">
-                            <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
-                        </a>
-                    {/if}
-                </div>
-                <div class="col-md-10 col-sm-12 position-static">
-                    {hook h='displayTop'}
-                    <div class="clearfix"></div>
-                </div>
+            <div class="position-static">
+                {hook h='displayTop'}
             </div>
             <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
                 <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
