@@ -38,7 +38,9 @@ const config = {
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
-                        options: {}
+                        options: {
+                            sourceMap: true
+                        }
                     },
                     {
                         loader: "css-loader",
