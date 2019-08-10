@@ -225,6 +225,8 @@
     a[data-depth="0"] {
       color: $gray;
       text-transform: uppercase;
+      font-family: 'oswald';
+      font-size: 1.125rem;
     }
     .search-widget {
       float: right;
@@ -232,12 +234,6 @@
   }
   .top-menu-link {
     margin-left: $medium-space;
-  }
-  .top-menu {
-    > li > a {
-      font-family: 'oswald';
-      font-size: 1.125rem;
-    }
   }
 }
 
