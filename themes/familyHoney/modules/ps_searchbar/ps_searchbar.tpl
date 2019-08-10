@@ -28,7 +28,7 @@
 		<input type="hidden" name="controller" value="search">
 		<input type="text" name="s" value="{$search_string}" placeholder="{l s='Search our catalog' d='Shop.Theme.Catalog'}" aria-label="{l s='Search' d='Shop.Theme.Catalog'}">
 		<button type="submit">
-			<i class="ion ion-md-search search"></i>
+			<i class="ion ion-android-search search"></i>
 		</button>
 	</form>
 </div>

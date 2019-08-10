@@ -15,7 +15,7 @@
     "bourbon": "^4.2.6",
     "expose-loader": "^0.7.3",
     "flexibility": "^1.0.5",
-    "ionicons": "^4.6.2",
+    "ionicons": "^2.0.1",
     "jquery": "^3.4.1",
     "material-design-icons": "^3.0.1",
     "normalize-scss": "^7.0.1",

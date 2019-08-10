@@ -29,7 +29,7 @@
         {/if}
             <span class="wrapper">
                 <span class="cart-icon">
-                    <i class="ion ion-md-cart"></i>
+                    <i class="ion ion-android-cart"></i>
                     <span class="count">{$cart.products_count}</span>
                 </span>
                 <span class="cart-text text">

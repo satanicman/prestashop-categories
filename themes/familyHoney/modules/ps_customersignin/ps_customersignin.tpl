@@ -48,7 +48,7 @@
         title="{l s='Log in to your customer account' d='Shop.Theme.Customeraccount'}"
         rel="nofollow"
       >
-        <i class="ion ion-ios-contact"></i>
+        <i class="ion ion-ios-contact-outline icon"></i>
         <span class="hidden-sm-down">{l s='Кабинет покупателя' d='Shop.Theme.Actions'}</span>
       </a>
     {/if}

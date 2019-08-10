@@ -25,7 +25,7 @@
 <div id="_desktop_contact_link">
   <div id="contact-link">
     {if $contact_infos.phone}
-      <i class="ion ion-ios-call"></i> <span class="number">{$contact_infos.phone}</span>
+      <i class="ion ion-ios-telephone"></i> <span class="number">{$contact_infos.phone}</span>
     {else}
       <a href="{$urls.pages.contact}">{l s='Contact us' d='Shop.Theme.Global'}</a>
     {/if}
