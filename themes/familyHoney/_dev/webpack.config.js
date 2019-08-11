@@ -77,12 +77,23 @@ const config = {
                 ]
             },
             {
-                test: /.(png|woff(2)?|eot|ttf|svg|gif)(\?[a-z0-9=\.]+)?$/,
+                test: /.(woff(2)?|eot|ttf|svg)$/,
                 use: [
                     {
                         loader: 'file-loader',
                         options: {
                             name: '../fonts/[name]/[hash].[ext]'
+                        }
+                    }
+                ]
+            },
+            {
+                test: /.(png|gif|jpg|jpeg)(\?[a-z0-9=\.]+)?$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '../img/[name].[ext]'
                         }
                     }
                 ]
