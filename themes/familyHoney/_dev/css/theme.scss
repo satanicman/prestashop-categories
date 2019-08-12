@@ -28,6 +28,96 @@
 @import "components/customization-modal";
 @import "components/sitemap";
 
+.header-block {
+  font-family: 'pattaya';
+  font-size: 3.375rem;
+  line-height: 1;
+  color: #384451;
+}
+
+.title-block {
+  text-align: center;
+  .header {
+    margin-bottom: 20px;
+  }
+  .description {
+    font-size: 0.9375rem;
+    color: #092643;
+    max-width: 595px;
+    margin: 0 auto;
+  }
+}
+
+.smartblock-latest {
+  padding-top: 40px;
+}
+
+.smartblock-article {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 9px 35px 0 rgba(10, 10, 10, 0.1);
+  overflow: hidden;
+  > .header .image {
+    width: 100%;
+  }
+}
+
+.article-content {
+  padding: 15px;
+  > .title {
+    font-size: 1.125rem;
+    color: rgb(56, 68, 86);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+
+  > .description {
+    font-size: 0.875rem;
+    color: rgb(120, 122, 126);
+    line-height: 1.286;
+    margin-bottom: 20px;
+  }
+
+  > .details {
+    font-size: 1.5rem;
+    font-family: "pattaya";
+    color: rgb(241, 135, 3);
+    line-height: 1.2;
+  }
+
+  .date {
+    position: absolute;
+    top: -35px;
+    display: inline-block;
+    background-color: $green-dark;
+    min-width: 54px;
+    color: #fff;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    text-align: center;
+    padding: 6px 7px 5px;
+    > .bold {
+      display: block;
+      font-weight: 800;
+      font-size: 1.4285714285714286rem;
+    }
+  }
+
+  > .info {
+    position: relative;
+    margin-bottom: 25px;
+  }
+}
+.comments-count {
+  color: #817f7f;
+  font-size: 0.875rem;
+  line-height: 18px;
+  > .ion {
+    font-size: 18px;
+  }
+}
+
 .cart-icon {
   position: relative;
   display: inline-block;
