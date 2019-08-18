@@ -62,5 +62,7 @@
             {/if}
         </section>
 
+        {block name='product_list_footer'}
+        {/block}
     </section>
 {/block}
