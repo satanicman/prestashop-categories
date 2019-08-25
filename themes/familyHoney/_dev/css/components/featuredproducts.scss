@@ -85,18 +85,6 @@ $product-description-height: 70px;
     }
   }
 
-  .product-miniature {
-    .product-flags {
-      li.product-flag {
-        min-width: 3.125rem;
-        min-height: 1.875rem;
-        font-weight: 600;
-        &.online-only {
-          top: 13.1rem;
-        }
-      }
-    }
-  }
   .comments_note {
     text-align: center;
     color: $gray;
