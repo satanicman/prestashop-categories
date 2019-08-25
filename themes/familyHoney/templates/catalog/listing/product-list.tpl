@@ -54,11 +54,9 @@
                     {/block}
                 </div>
             {else}
-                <div id="js-product-list-top"></div>
                 <div id="js-product-list">
                     {include file='errors/not-found.tpl'}
                 </div>
-                <div id="js-product-list-bottom"></div>
             {/if}
         </section>
 

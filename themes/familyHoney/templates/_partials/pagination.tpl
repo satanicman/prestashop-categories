@@ -22,35 +22,36 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<nav class="pagination">
+<div class="row">
     <div class="col-md-4">
-        {block name='pagination_page_list'}
-            {if $pagination.should_be_displayed}
-                <ul class="page-list clearfix text-sm-center">
-                    {foreach from=$pagination.pages item="page"}
-                        <li {if $page.current} class="current" {/if}>
-                            {if $page.type === 'spacer'}
-                                <span class="spacer">&hellip;</span>
-                            {else}
-                                <a
-                                        rel="{if $page.type === 'previous'}prev{elseif $page.type === 'next'}next{else}nofollow{/if}"
-                                        href="{$page.url}"
-                                        class="{if $page.type === 'previous'}previous {elseif $page.type === 'next'}next {/if}{['disabled' => !$page.clickable, 'js-search-link' => true]|classnames}"
-                                >
-                                    {if $page.type === 'previous'}
-                                        <i class="ion ion-chevron-left"></i>
-                                    {elseif $page.type === 'next'}
-                                        <i class="ion ion-chevron-right"></i>
-                                    {else}
-                                        {$page.page}
-                                    {/if}
-                                </a>
-                            {/if}
-                        </li>
-                    {/foreach}
-                </ul>
-            {/if}
-        {/block}
+        <nav class="pagination">
+            {block name='pagination_page_list'}
+                {if $pagination.should_be_displayed}
+                    <ul class="page-list clearfix text-sm-center">
+                        {foreach from=$pagination.pages item="page"}
+                            <li {if $page.current} class="current" {/if}>
+                                {if $page.type === 'spacer'}
+                                    <span class="spacer">&hellip;</span>
+                                {else}
+                                    <a
+                                            rel="{if $page.type === 'previous'}prev{elseif $page.type === 'next'}next{else}nofollow{/if}"
+                                            href="{$page.url}"
+                                            class="{if $page.type === 'previous'}previous {elseif $page.type === 'next'}next {/if}{['disabled' => !$page.clickable, 'js-search-link' => true]|classnames}"
+                                    >
+                                        {if $page.type === 'previous'}
+                                            <i class="ion ion-chevron-left"></i>
+                                        {elseif $page.type === 'next'}
+                                            <i class="ion ion-chevron-right"></i>
+                                        {else}
+                                            {$page.page}
+                                        {/if}
+                                    </a>
+                                {/if}
+                            </li>
+                        {/foreach}
+                    </ul>
+                {/if}
+            {/block}
+        </nav>
     </div>
-
-</nav>
+</div>

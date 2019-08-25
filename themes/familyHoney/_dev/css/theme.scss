@@ -341,7 +341,7 @@
     }
   }
   .breadcrumb {
-    background: transparent;
+    background: inherit;
     padding: 0;
     &[data-depth="1"] {
       display: none;
@@ -352,9 +352,14 @@
     }
     li {
       display: inline;
+      .homeIcon {
+        color: $green-dark;
+        font-size: 18px;
+        margin-right: 0.3125rem;
+      }
       &::after {
         content: "/";
-        color: $gray;
+        color: #333;
         margin: 0.3125rem;
       }
       &:last-child {
@@ -366,7 +371,11 @@
         }
       }
       a {
-        color: $gray-darker;
+        font-size: 0.9375rem;
+        color: #3d4a56;
+        &.current {
+          color: #919498;
+        }
       }
     }
   }

@@ -28,7 +28,10 @@
             {foreach from=$breadcrumb.links item=path name=breadcrumb}
                 {block name='breadcrumb_item'}
                     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                        <a itemprop="item" href="{$path.url}">
+                        <a itemprop="item" href="{$path.url}"{if $breadcrumb.links|count === $smarty.foreach.breadcrumb.iteration} class="current" {/if}>
+                            {if $smarty.foreach.breadcrumb.iteration == 1}
+                                <i class="ion ion-ios-home homeIcon"></i>
+                            {/if}
                             <span itemprop="name">{$path.title}</span>
                         </a>
                         <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">

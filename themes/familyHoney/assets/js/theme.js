@@ -1877,8 +1877,12 @@ function updateProductListDOM(data) {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#js-product-list').replaceWith(data.rendered_products);
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#js-product-list-bottom').replaceWith(data.rendered_products_bottom);
 
+  if (data.rendered_products_footer) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#js-product-list-footer').replaceWith(data.rendered_products_footer);
+  }
+
   if (data.rendered_products_header) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#js-product-list-header, #js-product-list-footer').replaceWith(data.rendered_products_header);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#js-product-list-header').replaceWith(data.rendered_products_header);
   }
 
   let productMinitature = new _components_product_miniature__WEBPACK_IMPORTED_MODULE_3__["default"]();

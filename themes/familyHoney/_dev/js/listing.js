@@ -155,8 +155,12 @@ function updateProductListDOM (data) {
   $('#js-product-list-top').replaceWith(data.rendered_products_top);
   $('#js-product-list').replaceWith(data.rendered_products);
   $('#js-product-list-bottom').replaceWith(data.rendered_products_bottom);
+  if (data.rendered_products_footer) {
+      $('#js-product-list-footer').replaceWith(data.rendered_products_footer);
+  }
+
   if (data.rendered_products_header) {
-      $('#js-product-list-header, #js-product-list-footer').replaceWith(data.rendered_products_header);
+      $('#js-product-list-header').replaceWith(data.rendered_products_header);
   }
 
   let productMinitature = new ProductMinitature();
