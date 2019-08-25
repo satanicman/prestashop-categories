@@ -44,7 +44,7 @@ import prestashop from 'prestashop';
 import EventEmitter from 'events';
 
 import './lib/bootstrap-filestyle.min';
-import './lib/jquery.scrollbox.min';
+import 'slick-carousel/slick/slick.min';
 
 import './components/block-cart';
 

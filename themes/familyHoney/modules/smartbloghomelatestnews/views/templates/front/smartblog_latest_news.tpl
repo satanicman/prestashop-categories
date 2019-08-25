@@ -1,6 +1,6 @@
-<div class="block">
+<div class="block ">
     <div class="title-block">
-        <h2 class="header-block header">{l s='Новости и статьи' mod='smartblog'}</h2>
+        <h2 class="header-block header _large">{l s='Новости и статьи' mod='smartblog'}</h2>
         <p class="description">{l s='Употребляйте мёд и джем ежедневно, получайте оздоровление организма, бодрость и хорошее настроение' mod='smartblog'}</p>
     </div>
     <div class="smartblock-latest clearfix">
