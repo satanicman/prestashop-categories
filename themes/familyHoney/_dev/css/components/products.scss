@@ -1,12 +1,22 @@
 #product {
+  .product-name {
+    margin-bottom: $medium-space;
+  }
   #content {
     position: relative;
     max-width: 442px;
  }
 }
 .product-price {
-  color: $brand-primary;
-  display: inline-block;
+  color: $blue-text;
+  font-size: 18px;
+  font-weight: 300;
+
+  > .current-price > .price {
+    color: $brand-primary;
+    font-size: 30px;
+    font-weight: 700;
+  }
 }
 #product-description-short {
   color: $gray-darker;
@@ -15,15 +25,15 @@
   font-size: $font-size-lg;
   color: $gray-darker;
 
-  .manufacturer-logo {
-    height: 3.125rem;
-    border: none;
-    margin-bottom: 1rem;
-  }
-
-  .product-description img {
-    max-width: 100%;
-    height: auto;
+  .product-description {
+    color: $blue-text;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: $medium-space;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
 .input-color {
@@ -109,10 +119,6 @@
 }
 .product-prices {
   margin-top: $medium-space;
-
-  div {
-    margin-bottom: 0.625rem;
-  }
 }
 
 

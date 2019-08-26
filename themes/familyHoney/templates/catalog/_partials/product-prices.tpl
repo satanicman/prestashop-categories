@@ -35,7 +35,7 @@
                 <meta itemprop="priceCurrency" content="{$currency.iso_code}">
 
                 <div class="current-price">
-                    <span itemprop="price" content="{$product.price_amount}">{$product.price}</span>
+                    {l s='Price' d='Shop.Theme.Catalog'}: <span class="price" itemprop="price" content="{$product.price_amount}">{$product.price}</span>
                 </div>
             </div>
         {/block}
