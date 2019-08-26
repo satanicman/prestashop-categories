@@ -180,11 +180,18 @@ input, textarea {
   }
 }
 .form-control-select {
-  height: 2.625rem;
+  height: 48px !important;
+  width: auto;
   -moz-appearance: none;
   -webkit-appearance: none;
-  background: $gray-light url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAPklEQVR4Ae3TwREAEBQD0V/6do4SXPZg7EsBhsQ8IEmSMOsiuEfg3gL3oXC7wK0bd1G4o8X9F4yIkyQfSrIByQBjp7QuND8AAAAASUVORK5CYII=") no-repeat scroll right 0.5rem center / 1.25rem 1.25rem;
-  padding: 0 0.5rem;
+  background: white url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAYAAABSfLWiAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDYxQ0E4NkZDMDBBMTFFOTg5NEFGNUQ5RTIwNEM3MkUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDYxQ0E4NzBDMDBBMTFFOTg5NEFGNUQ5RTIwNEM3MkUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NjFDQTg2REMwMEExMUU5ODk0QUY1RDlFMjA0QzcyRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NjFDQTg2RUMwMEExMUU5ODk0QUY1RDlFMjA0QzcyRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PpzCDmIAAADISURBVHjaYmYAAk4153JWYaUff97ef85AJADqSQPqMQbqOcsIMgAo1gHE74HY9futvWeJMACmBwRMmIDELCAGaRQE4t1ABUqEXIBkwCyQpYxQCbABQGwMNRDkovdYDDCGqhOEGpAOEmdEUoDXIFwGoBiCZNAZIFZCNgjNgNVAsTBkfczIHGBI/wCG+FEgMxRqkAuQD3LNKqgBIIPDQOqQ9THiCDxkm98jGYA1rBjxxAKyQTgNwPAOmteeA71yD2qIHy4DQAAgwAANNF1bKIDNagAAAABJRU5ErkJggg==") no-repeat scroll right 23px center;
+  padding: 0 47px 0 25px;
+  border-radius: 24px;
+  border: 1px solid $brand-primary;
+  color: $blue-text;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: 'montserrat';
 }
 .form-control-valign {
   padding-top: 0.5rem;
@@ -225,10 +232,8 @@ input, textarea {
   }
 }
 .bootstrap-touchspin {
-  width: auto;
-  float: left;
   display: inline-block;
-  @include box-shadow-light;
+  width: auto;
   input {
     &:focus {
       outline: none;
@@ -250,28 +255,20 @@ input, textarea {
     border: $input-btn-border-width solid $input-border-color;
     height: $input-height / 2 + 0.0625rem;
     &:hover {
-      background-color: $gray-light;
     }
   }
   .input-group-btn-vertical {
-    color: $gray-darker;
-    width: auto;
-    float: left;
+    display: block;
+    position: static;
     .bootstrap-touchspin-up {
       border-radius: 0;
+      border: none;
+      right: 30px;
     }
     .bootstrap-touchspin-down {
       border-radius: 0;
-    }
-    .touchspin-up {
-      &:after {
-        content: "\E5CE";
-      }
-    }
-    .touchspin-down {
-      &:after {
-        content: "\E5CF";
-      }
+      border: none;
+      left: 30px;
     }
     i {
       top: 0.0625rem;

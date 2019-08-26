@@ -195,7 +195,7 @@
 
     width: 24px;
     height: 24px;
-    background-color: #f18703;
+    background-color: $brand-secondary;
     border-radius: 50%;
     overflow: hidden;
 
@@ -499,10 +499,6 @@
   }
   #blockcart-modal .cart-content {
     padding-left: 0;
-  }
-  #blockcart-modal .product-name,
-  #product-availability {
-    margin-top: $small-space;
   }
   #search_filters .facet .facet-label {
     text-align: left;

@@ -1715,8 +1715,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     const $quantityInput = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#quantity_wanted');
     $quantityInput.TouchSpin({
       verticalbuttons: true,
-      verticalupclass: 'material-icons touchspin-up',
-      verticaldownclass: 'material-icons touchspin-down',
+      verticalupclass: 'ion ion-plus',
+      verticaldownclass: 'ion ion-minus',
       buttondown_class: 'btn btn-touchspin js-touchspin',
       buttonup_class: 'btn btn-touchspin js-touchspin',
       min: parseInt($quantityInput.attr('min'), 10),
