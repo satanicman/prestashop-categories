@@ -1,4 +1,8 @@
 #product {
+  .products-slider-wrapper {
+    margin-bottom: 45px;
+    padding-top: 20px;
+  }
   .product-name {
     margin-bottom: $medium-space;
   }
@@ -82,16 +86,13 @@
   .add-to-cart {
     background-color: $brand-secondary;
     background-image: linear-gradient(180deg, #f6a313 0%, #f18402 100%);
-    border-radius: 29px;
     box-shadow: 0 2px 1px #9f5902;
     border: none;
-    padding: 20px 67px 20px 35px;
     position: relative;
+    padding-right: 67px;
+    margin-right: 25px;
 
-    font-size: 1rem;
-    font-weight: 700;
     color: white;
-    text-transform: none;
     > .icon {
       font-size: 24px;
       line-height: 1;

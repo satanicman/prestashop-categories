@@ -115,9 +115,11 @@
 
         {block name='product_accessories'}
             {if $accessories}
-                <section class="product-accessories clearfix">
-                    <p class="h5 text-uppercase">{l s='You might also like' d='Shop.Theme.Catalog'}</p>
-                    <div class="products">
+                <section class="product-accessories clearfix products-slider-wrapper">
+                    <div class="title-block">
+                        <h2 class="header-block header">{l s='You might also like' d='Shop.Theme.Catalog'}</h2>
+                    </div>
+                    <div class="products products-slider">
                         {foreach from=$accessories item="product_accessory"}
                             {block name='product_miniature'}
                                 {include file='catalog/_partials/miniatures/product.tpl' product=$product_accessory}
@@ -134,14 +136,6 @@
 
         {block name='product_images_modal'}
             {include file='catalog/_partials/product-images-modal.tpl'}
-        {/block}
-
-        {block name='page_footer_container'}
-            <footer class="page-footer">
-                {block name='page_footer'}
-                    <!-- Footer content -->
-                {/block}
-            </footer>
         {/block}
     </section>
 {/block}

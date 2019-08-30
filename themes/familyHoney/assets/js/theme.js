@@ -1681,24 +1681,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
           slidesToShow: 1
         }
       }]
-    }); // if ($('#main .js-qv-product-images li').length > 2) {
-    //   $('#main .js-qv-mask').addClass('scroll');
-    //   $('.scroll-box-arrows').addClass('scroll');
-    //     $('#main .js-qv-mask').scrollbox({
-    //       direction: 'h',
-    //       distance: 113,
-    //       autoPlay: false
-    //     });
-    //     $('.scroll-box-arrows .left').click(function () {
-    //       $('#main .js-qv-mask').trigger('backward');
-    //     });
-    //     $('.scroll-box-arrows .right').click(function () {
-    //       $('#main .js-qv-mask').trigger('forward');
-    //     });
-    // } else {
-    //   $('#main .js-qv-mask').removeClass('scroll');
-    //   $('.scroll-box-arrows').removeClass('scroll');
-    // }
+    });
   }
 
   function createInputFile() {
@@ -1867,6 +1850,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var slick_carousel_slick_slick_min__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! slick-carousel/slick/slick.min */ "./node_modules/slick-carousel/slick/slick.min.js");
 /* harmony import */ var slick_carousel_slick_slick_min__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_min__WEBPACK_IMPORTED_MODULE_18__);
 /* harmony import */ var _components_block_cart__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/block-cart */ "./js/components/block-cart.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! jquery */ "jquery");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_20__);
 /**
  * 2007-2019 PrestaShop and Contributors
  *
@@ -1910,16 +1895,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
  // "inherit" EventEmitter
 
 for (var i in events__WEBPACK_IMPORTED_MODULE_16___default.a.prototype) {
   prestashop__WEBPACK_IMPORTED_MODULE_15___default.a[i] = events__WEBPACK_IMPORTED_MODULE_16___default.a.prototype[i];
 }
 
-$(document).ready(() => {
-  let dropDownEl = $('.js-dropdown');
+jquery__WEBPACK_IMPORTED_MODULE_20___default()(document).ready(() => {
+  let dropDownEl = jquery__WEBPACK_IMPORTED_MODULE_20___default()('.js-dropdown');
   const form = new _components_form__WEBPACK_IMPORTED_MODULE_11__["default"]();
-  let topMenuEl = $('.js-top-menu ul[data-depth="0"]');
+  let topMenuEl = jquery__WEBPACK_IMPORTED_MODULE_20___default()('.js-top-menu ul[data-depth="0"]');
   let dropDown = new _components_drop_down__WEBPACK_IMPORTED_MODULE_10__["default"](dropDownEl);
   let topMenu = new _components_top_menu__WEBPACK_IMPORTED_MODULE_14__["default"](topMenuEl);
   let productMinitature = new _components_product_miniature__WEBPACK_IMPORTED_MODULE_12__["default"]();
@@ -1929,6 +1915,26 @@ $(document).ready(() => {
   topMenu.init();
   productMinitature.init();
   productSelect.init();
+  jquery__WEBPACK_IMPORTED_MODULE_20___default()('.products-slider').slick({
+    slidesToShow: 4,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }]
+  });
 });
 
 /***/ }),

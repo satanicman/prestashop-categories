@@ -53,6 +53,15 @@
                     {l s='Add to cart' d='Shop.Theme.Actions'}
                     <i class="ion ion-android-cart icon"></i>
                 </button>
+                <button
+                        type="button"
+                        class="btn btn-primary _inherit"
+                        {if !$product.add_to_cart_url}
+                            disabled
+                        {/if}
+                >
+                    {l s='Quick order' d='Shop.Theme.Actions'}
+                </button>
             </div>
         {/block}
     {/if}

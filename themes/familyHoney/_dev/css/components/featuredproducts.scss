@@ -24,7 +24,7 @@ $thumbnail-size: 250px;
     border-radius: 5px;
     margin-bottom: 50px;
     margin-top: 70px;
-    box-shadow: 0 9px 43px #eee;
+    box-shadow: 0 0 15px #e1e1e1;
     .product-thumbnail {
       img {
         position: relative;
@@ -60,6 +60,27 @@ $thumbnail-size: 250px;
       display: inline-block;
       content: '+';
       padding-left: 4px;
+    }
+  }
+
+  .product-description {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    .quick-view {
+      display: inline-block;
+
+      min-width: 188px;
+      padding: 10px;
+      box-shadow: 0 2px 1px #416808;
+      border-radius: 22px;
+      text-align: center;
+
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1rem;
+      color: #fff;
     }
   }
 

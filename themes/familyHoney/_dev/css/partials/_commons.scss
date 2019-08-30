@@ -63,12 +63,40 @@ p {
 }
 .btn-primary,
 .btn-secondary {
-  @include box-shadow-light;
-  text-transform: uppercase;
-  font-weight: 600;
-  padding: 0.5rem 1.25rem;
-  .material-icons {
-    margin-right: $small-space;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 20px 35px;
+  color: $blue-text;
+  border-radius: 29px;
+  border: 1px solid $brand-primary;
+
+  &._inherit {
+    background: none;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: $brand-primary;
+    color: $blue-text;
+
+    &._inherit {
+      background: none;
+    }
+  }
+
+  &:active {
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: $brand-primary;
+      color: $blue-text;
+
+      &._inherit {
+        background: none;
+      }
+    }
   }
 }
 .btn-tertiary {

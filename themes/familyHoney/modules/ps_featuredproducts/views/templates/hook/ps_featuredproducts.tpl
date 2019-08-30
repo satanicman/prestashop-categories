@@ -22,16 +22,14 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<section class="featured-products clearfix">
-  <h2 class="h2 products-section-title text-uppercase">
-    {l s='Popular Products' d='Shop.Theme.Catalog'}
-  </h2>
-  <div class="products">
+<section class="featured-products clearfix products-slider-wrapper">
+  <div class="title-block">
+    <h2 class="header-block header">{l s='Popular Products' d='Shop.Theme.Catalog'}</h2>
+    <p class="description">{l s='Употребляйте мёд и джем ежедневно, получайте оздоровлениеорганизма, бодрость и хорошее настроение' d='Shop.Theme.Catalog'}</p>
+  </div>
+  <div class="products products-slider">
     {foreach from=$products item="product"}
       {include file="catalog/_partials/miniatures/product.tpl" product=$product}
     {/foreach}
   </div>
-  <a class="all-product-link float-xs-left float-md-right h4" href="{$allProductsLink}">
-    {l s='All products' d='Shop.Theme.Catalog'}<i class="material-icons">&#xE315;</i>
-  </a>
 </section>

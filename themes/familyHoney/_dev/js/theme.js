@@ -47,6 +47,7 @@ import './lib/bootstrap-filestyle.min';
 import 'slick-carousel/slick/slick.min';
 
 import './components/block-cart';
+import $ from "jquery";
 
 // "inherit" EventEmitter
 for (var i in EventEmitter.prototype) {
@@ -66,4 +67,28 @@ $(document).ready(() => {
   topMenu.init();
   productMinitature.init();
   productSelect.init();
+
+  $('.products-slider').slick({
+    slidesToShow: 4,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 });

@@ -84,24 +84,6 @@ $(document).ready(function () {
         }
       ]
     });
-    // if ($('#main .js-qv-product-images li').length > 2) {
-    //   $('#main .js-qv-mask').addClass('scroll');
-    //   $('.scroll-box-arrows').addClass('scroll');
-    //     $('#main .js-qv-mask').scrollbox({
-    //       direction: 'h',
-    //       distance: 113,
-    //       autoPlay: false
-    //     });
-    //     $('.scroll-box-arrows .left').click(function () {
-    //       $('#main .js-qv-mask').trigger('backward');
-    //     });
-    //     $('.scroll-box-arrows .right').click(function () {
-    //       $('#main .js-qv-mask').trigger('forward');
-    //     });
-    // } else {
-    //   $('#main .js-qv-mask').removeClass('scroll');
-    //   $('.scroll-box-arrows').removeClass('scroll');
-    // }
   }
 
   function createInputFile()
