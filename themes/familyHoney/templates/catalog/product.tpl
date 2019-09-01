@@ -113,11 +113,15 @@
             </div>
         </div>
 
+        {block name='product_footer'}
+            {hook h='displayFooterProduct' product=$product category=$category}
+        {/block}
+
         {block name='product_accessories'}
             {if $accessories}
                 <section class="product-accessories clearfix products-slider-wrapper">
                     <div class="title-block">
-                        <h2 class="header-block header">{l s='You might also like' d='Shop.Theme.Catalog'}</h2>
+                        <h2 class="header-block header _orange">{l s='Recommended Products' d='Shop.Theme.Catalog'}</h2>
                     </div>
                     <div class="products products-slider">
                         {foreach from=$accessories item="product_accessory"}
@@ -128,10 +132,6 @@
                     </div>
                 </section>
             {/if}
-        {/block}
-
-        {block name='product_footer'}
-            {hook h='displayFooterProduct' product=$product category=$category}
         {/block}
 
         {block name='product_images_modal'}
